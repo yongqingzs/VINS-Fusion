@@ -8,7 +8,7 @@
  *
  * Author: Qin Tong (qintonguav@gmail.com)
  *******************************************************/
-
+#include <opencv2/imgproc/types_c.h>
 #include "feature_tracker.h"
 
 bool FeatureTracker::inBorder(const cv::Point2f &pt)

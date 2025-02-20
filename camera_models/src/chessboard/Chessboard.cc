@@ -23,7 +23,7 @@ Chessboard::Chessboard(cv::Size boardSize, cv::Mat& image)
     else
     {
         image.copyTo(mSketch);
-        cv::cvtColor(image, mImage, CV_BGR2GRAY);
+        cv::cvtColor(image, mImage, cv::COLOR_BGR2GRAY);
     }
 }
 
@@ -147,7 +147,7 @@ Chessboard::findChessboardCornersImproved(const cv::Mat& image,
 
         if (image.channels() != 1)
         {
-            cv::cvtColor(image, norm_img, CV_BGR2GRAY);
+            cv::cvtColor(image, norm_img, cv::COLOR_BGR2GRAY);
             img = norm_img;
         }
 
